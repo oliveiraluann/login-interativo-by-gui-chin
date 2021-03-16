@@ -46,11 +46,22 @@ body {
     color: #f5f5f5;
 }
 
+.title-second {
+    color: blueviolet;
+}
+
 .description {
     font-size: 14px;
-    color: #f5f5f5;
     font-weight: 300;
     line-height: 30px;
+}
+
+.description-primary {
+    color: #f5f5f5;
+}
+
+.description-second {
+    color: #95a5a6;
 }
 
 .btn {
@@ -61,6 +72,8 @@ body {
     padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
+    align-self: center;
+    border: none;
 }
 
 .btn-primary {
@@ -70,6 +83,16 @@ body {
 
 .btn-primary:hover {
     background-color: #f5f5f5;
+    color: blueviolet;
+}
+
+.btn-second {
+    background-color: blueviolet;
+}
+
+.btn-second:hover {
+    background-color: whitesmoke;
+    border: 1px solid blueviolet;
     color: blueviolet;
 }
 
@@ -85,17 +108,41 @@ body {
 
 .second-column {
     flex: 2 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .list-social-media {
     display: flex;
+    list-style-type: none;
+}
+
+.item-social-media {
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.item-social-media a {
+    color: #95a5a6;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    width: 60%;
 }
 
+.form input {
+    height: 45px;
+    border: none;
+    background-color: #ecf0f1;
+    margin: 8px;
+}
 
 .second-content {
     position: absolute;
