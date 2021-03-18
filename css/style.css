@@ -36,6 +36,9 @@ body {
     height: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+
+
+    left: 60%;
 }
 
 .title {
@@ -174,4 +177,23 @@ body {
 .second-content {
     position: absolute;
     display: flex;
+}
+
+.second-content .first-column {
+    order: 2;
+}
+
+.second-content .second-column {
+    order: 1;
+}
+
+.password {
+    color: #34495e;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.password::first-letter {
+    text-transform: capitalize;
 }
