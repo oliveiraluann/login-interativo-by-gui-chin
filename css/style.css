@@ -107,13 +107,16 @@ body {
 
 .first-content {
     display: flex;
-    display: none;
+}
+
+.first-content .second-column {
+    z-index: 11;
 }
 
 .first-column {
     text-align: center;
     width: 40%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .second-column {
@@ -203,4 +206,28 @@ body {
 
 .password::first-letter {
     text-transform: capitalize;
+}
+
+.sign-up-js .first-content .first-column,
+.sign-up-js .first-content .second-column {
+    z-index: -1;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+    z-index: 11;
+}
+
+.sign-up-js .content::before {
+    left: 60%;
+}
+
+.sign-up-first .second-content .first-column,
+.sign-up-first .second-content .second-column {
+    z-index: -1;
+}
+
+.sign-up-first .first-content .first-column,
+.sign-up-first .first-content .second-column {
+    z-index: 11;
 }
