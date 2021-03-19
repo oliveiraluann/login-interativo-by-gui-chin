@@ -220,6 +220,10 @@ body {
 
 .sign-up-js .content::before {
     left: 60%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .sign-up-first .second-content .first-column,
